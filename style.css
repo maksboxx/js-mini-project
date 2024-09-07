@@ -138,6 +138,7 @@ ul:first-child{
 .fullPostDiv{
     background-color: #E9EFEC;
     border: 1px solid #16423C;
+    border-radius: 10px;
     width: 90vw;
     margin: 20px  auto;
 }
