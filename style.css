@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#usersDiv{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.userBlock{
+    width: 45vw;
+    border: 1px solid #16423C;
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+    background-color: #E9EFEC;
+}
+.userBlock>p{
+    color: #6A9C89;
+}
+.userBlock>h2{
+    color: #6A9C89;
+}
+.link-user-info{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 20px 0;
+    text-decoration: none;
+    font-weight: 800;
+    color:  #6A9C89;
+    border: 1px solid #C4DAD2;
+    border-radius: 30px;
+    height: 40px;
+    padding: 8px;
+}
+/*----------------------------------------------------------PAGE TWO---------------------------------------------------- */
+/* user-details.html - блок з інфою про user зверху сторінки. Кнопка нижчє, на 90% ширини сторінки, по центру.*/
+/* блоки з короткою іфною про post - в ряд по 5 .*/
+/*-----------------------------------------------------------------------------------------------------------------------*/
+#usersDetailsDiv{
+    width: 90vw;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ul:first-child{
+    background-color: #E9EFEC;
+    border: 1px solid #16423C;
+    width: 90vw;
+    border-radius: 15px;
+    padding: 30px 0 30px 30vw;
+}
+.ul-user-full-info{
+
+    padding-left: 30px;
+    list-style-type: none;
+}
+.li-user-full-info::first-letter{
+    text-transform: uppercase;
+    font-size: 23px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+}
+.li-user-full-info{
+    font-size: 23px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+}
+.button-show-posts{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 800;
+    margin: 10px 0 10px 0;
+    height: 40px;
+    width: 90vw;
+    background-color: #E9EFEC;
+    border: 1px solid #16423C;
+    border-radius: 15px;
+    cursor: pointer;
+}
+/*-----------------SHOW POSTS----------------*/
+.sectionPosts{
+    width: 90vw;
+    background: #C4DAD2;
+    border: 1px solid #16423C;
+    border-radius: 15px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+}
+.postDiv{
+    border-radius: 10px;
+    background-color: #E9EFEC;
+    width: 233px;
+    border: 1px solid #16423C;
+    min-height: 140px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+.postDiv:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.postP{
+    font-family: "Quicksand", sans-serif;
+}
+.postLink{
+    font-family: "Quicksand", sans-serif;
+    text-decoration: none;
+    font-weight: 800;
+    color: #6A9C89;
+    transition: 1s;
+}
+.postLink:hover{
+    color: #16423C;
+    transition: 1s;
+}
+/*----------------------------------------------PAGE THREE---------------------------------------------*/
+/*post-details.html - блок з інфою про пост зверху. Коментарі - по 4 в ряд.*/
+/* Всі елементи котрі характеризують users, posts, comments візуалізувати, так,
+ щоб було видно що це блоки (дати фон. марджини і тд)*/
+/*-----------------------------------------------------------------------------------------------------*/
+.fullPostDiv{
+    background-color: #E9EFEC;
+    border: 1px solid #16423C;
+    width: 90vw;
+    margin: 20px  auto;
+}
+.pPost{
+    font-family: "Quicksand", sans-serif;
+    margin: 15px;
+    font-size: 25px;
+}
+.pPost:first-letter{
+    text-transform: uppercase;
+}
+/*-------------------------COMMENTS-------------------------*/
+section{
+    margin: auto;
+    width: 90vw;
+    /*background: #C4DAD2;*/
+    /*border: 1px solid #16423C;*/    /*Добавлял эти свойста к секшину, но без них лучше смотрится*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    padding: 10px 50px;
+
+}
+.commentDiv{
+    border-radius: 10px;
+    border: 1px solid #16423C;
+    padding: 10px;
+    background-color: #E9EFEC;
+    width: 270px;
+    height: 200px;
+    overflow: auto;  /* Что бы не растягивать блок, сделал что бы он скрывался и скролилися */
+}
+.commentP{
+    width: 250px;
+    font-family: "Quicksand", sans-serif;
+}
+.commentP::first-letter{
+    text-transform: uppercase;
+    font-family: "Quicksand", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
